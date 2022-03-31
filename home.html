@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--- Basic Page Needs  -->
+    <meta charset="UTF-8">
+    <title>Home | ProMix Holdings Pvt Ltd</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Mobile Specific Meta  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <!--Icon-->
+    <link rel="shortcut icon" type="image/png" href="assets/images/logoo.png">
+    <!-- CSS -->
+     <!--Font-awesome icon-->
+    <link rel="stylesheet" href="assets/css/font-awosome.css">
+    <!--Flaticon CSS-->
+    <link rel="stylesheet" href="assets/font/flaticon.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <!-- Jquery Ui CSS -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Main StyleSheet CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="p-wrapper">
+            <div class="spinner">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </div>
+    </div>
+    <!--Header Section-->
+    <header class="header-area red">
+        <div class="container">
+            <div class="paint-nav head-6">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">       
+                    <a class="navbar-brand" href="home.html"><img src="assets/images/logoo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">                
+                        <ul class="navbar-nav hp-1-nav red ml-auto mt-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://contractors.promix.lk/">Contractors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://shop.promix.lk/" target="_blank">Buy Now</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link last-child" href="tel:+94775274374">Call : +94 77 527 4374</a>
+                            </li>
+                        </ul>             
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--/Header Section-->
+    <!-- Modal -->
+    <div class="modal animated fadeIn" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content e-m-contents">
+                <div class="modal-body">
+                    <button type="button" class="close es-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="card estimate-card es-card-2">
+                        <span class="flaticon-paint esc-paint"></span>
+                        <h2>Get An Estimate</h2>
+                        <article class="card-body">
+                            <form>
+                                <span class="e-ctl"> 1. What are the wall dimensions?</span>
+                                <div class="form-row pt-2">
+                                    <div class="col form-group">
+                                        <label>Height (m) </label>
+                                        <input type="text" class="form-control" placeholder="0.00" id="wd-height" required>
+                                    </div> <!-- form-group end.// -->
+                                    <div class="col form-group">
+                                        <label>Width (m)</label>
+                                        <input type="text" class="form-control" placeholder="0.00" id="wd-width" required>
+                                    </div> <!-- form-group end.// -->
+                                </div> <!-- form-row end.// -->
+
+                                <span class="e-ctl">2. What are the dimensions of the windows/areas
+                                    that you don't want to cover in metres?</span>
+                                <div class="form-row pt-2">
+                                    <div class="form-group col">
+                                        <label>Height (m)</label>
+                                        <input type="text" class="form-control" placeholder="0.00" id="wnd-height" value="00.00">
+                                    </div> <!-- form-group end.// -->
+                                    <div class="form-group col">
+                                        <label>Width (m)</label>
+                                        <input type="text" class="form-control" placeholder="0.00" id="wnd-width" value="00.00">
+                                    </div> <!-- form-group end.// -->
+                                </div> <!-- form-row.// -->
+
+                                <span class="e-ctl">3. What are the dimensions of the doors
+                                        that you don't want to cover in metres?</span>
+                                <div class="form-row pt-2">
+                                    <div class="form-group col">
+                                        <label>Height (m)</label>
+                                        <input type="text" class="form-control" placeholder="0" id="doord-height" value="00.00">
+                                    </div> <!-- form-group end.// -->
+                                    <div class="form-group col">
+                                        <label>Width (m)</label>
+                                        <input type="text" class="form-control" placeholder="0" id="doord-width" value="00.00">
+                                    </div> <!-- form-group end.// -->
+                                </div> <!-- form-row.// -->
+                                
+                                <span class="e-ctl">4. How many coats of paint do you want?</span>
+                                <div class="form-group p-2">
+                                    <label class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="coat-qty-check" value="1" checked>
+                                        <span class="form-check-label"> 1 coat</span>
+                                    </label>
+                                    <label class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="coat-qty-check" value="2">
+                                        <span class="form-check-label"> 2 coat</span>
+                                    </label>
+                                    <label class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="coat-qty-check" value="3">
+                                        <span class="form-check-label"> 3 coat</span>
+                                    </label>
+                                </div> <!-- form-group end.// -->
+                                <div class="e-result">
+                                    <div class="e-tottle me-tottle">
+                                        <h3 id="litre-result">00.00</h3>
+                                        <span>litres of paint</span>
+                                    </div>
+                                    <div class="er-text">
+                                        <p>This is based on a coverage of
+                                            <span id="mitresquireperlitre">12</span>m² per litre of paint. Always
+                                            check the coverage on the side
+                                            of the tin before buying.</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn-block ebtn" id="estimate-btn">Get Estimate Now</button>
+                                </div> <!-- form-group// -->
+                                <div class="form-group">
+                                    <button type="button" class="btn-block ebtn-r" id="estimate-reset-btn">Reset Estimate</button>
+                                </div> <!-- form-group// -->
+                                
+                            </form>
+                        </article> <!-- card-body end .// -->
+                    </div> <!-- card.// -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Model-->
+    <!--Hero Section-->
+    <section class="hero-area">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="wow zoomIn" data-wow-delay=".5s">Ready to use mortar mixes for construction</h1>
+                <p class="wow zoomIn" data-wow-delay="1s">Promix is the company, manufactures Ready to use mortar mixes for various kinds of
+                    construction requirments</p>
+                <div class="btn-contact bc-4">
+                    <span class="con-btn"><a href="contact.html">Contact Us</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Hero Section-->
+
+    <!--Service Section-->
+    <section class="service">
+        <div class="container">
+            <div class="paints-service">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="single-service ss-home6 wow fadeInUp" data-wow-delay=".5s">
+                            <span class="flaticon-paint ficon-bg-1"></span>
+                            <div class="icon-inner ssh4-i">
+                                <span class="flaticon-paint"></span>
+                            </div>
+                            <div class="ss-content sscontent-h4">
+                                <h3>Plaster Mortar</h3>
+                                <p>
+                                    <ul> 
+                                        <li> Ready to use 25Kg cement based plastering mortar mix</li>
+                                        <li> Just add 4.5L of water and mix</li>
+                                        <li> Directly applied on block, brick and concrete walls</li>
+                                        <li> Can be leveled by using Leveling boards</li>
+                                        <li> Can be floated by using plastic float</li>
+                                        <li> Corners can be finished</li>
+                                        <li> Approximate coverage 30 sqft (8mm)</li>
+                                        </ul>
+                                </p>
+                                <a href="service-details.html">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-service ss-2 ss-home66 wow fadeInUp" data-wow-delay="1s">
+                            <span class="flaticon-paint-1 ficon-bg-2"></span>
+                            <div class="icon-inner ssh4-i">
+                                <span class="flaticon-paint-1"></span>
+                            </div>
+                            <div class="ss-content sscontent-h4">
+                                <h3>Wall Clay Putty (CP)</h3>
+                                <p>
+                                    <ul>
+                                        <li>Ready to use 20Kg Clay cement based plastering mortar mix</li>  
+                                        <li>Just add 8L of water and mix</li>  
+                                        <li>Directly applied on, Plaster, Finished blocks and concrete walls</li>
+                                        <li>Corners can be finished</li>  
+                                        <li>Approximate coverage 60 sqft (4mm)</li>  
+                                        <li>Smooth finish</li>  
+                                        <li>Interior & Exterior use</li>  
+                                        <li>Available in White, Grey, yellow, orange</li>  
+                                    </ul>
+                                </p>
+                                <a href="service-details.html">Buy Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-service ss-home6 wow fadeInUp" data-wow-delay="1.5s">
+                            <span class="flaticon-paint-roller ficon-bg-3"></span>
+                            <div class="icon-inner ssh4-i">
+                                <span class="flaticon-paint-roller"></span>
+                            </div>
+                            <div class="ss-content sscontent-h4">
+                                <h3>Clay Flooring</h3>
+                                <p>
+                                    <ul>    
+                                        <li>Ready to use 20Kg Clay cement based floor finishing mix</li>
+                                        <li>Just add 8L of water and mix</li>
+                                        <li>Directly applied on rendered floors</li>
+                                        <li>Corners can be finished</li>
+                                        <li>Approximate coverage 60 sqft (4mm)</li>
+                                        <li>Smooth finish</li>
+                                        <li>Interior & Exterior use</li>
+                                        <li>Available in various white, grey, yellow, orange</li>
+                                    </ul>
+                                </p>
+                                <a href="service-details.html">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--div class="col">
+                        <div class="single-service ss-2 ss-home66 wow fadeInUp" data-wow-delay=".5s">
+                            <span class="flaticon-pantone ficon-bg-1"></span>
+                            <div class="icon-inner ssh4-i">
+                                <span class="flaticon-pantone"></span>
+                            </div>
+                            <div class="ss-content sscontent-h4">
+                                <h3>FLOOR COATING</h3>
+                                <p>Ready to use 25Kg cement based Adhesive mortar mix
+                                    • Just add 4.5L of water and mix
+                                    • Specialized for cement blocks
+                                    • High bonding strength
+                                    • Approximate bonding 50 Blocks
+                                    • Exterior and Interior use</p>
+                                <a href="service-details.html">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="single-service ss-home6 wow fadeInUp" data-wow-delay="1s">
+                            <span class="flaticon-art ficon-bg-5"></span>
+                            <div class="icon-inner ssh4-i">
+                                <span class="flaticon-art"></span>
+                            </div>
+                            <div class="ss-content sscontent-h4">
+                                <h3>Cool Paint (CLP)</h3>
+                                <p>• Keep the temperature down ( Heat Resistant)
+                                    • Ready to use 20Kg powdered clay (cool paint) mix
+                                    • Just add 10L of water and mix
+                                    • Directly applied on roof, terrace, exterior walls
+                                    • No need to use fillers
+                                    • Approximate coverage 500 sqft/ 20Kg bag
+                                    • Available in various colors</p>
+                                <a href="service-details.html">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="single-service ss-2 ss-home66 wow fadeInUp" data-wow-delay="1.5s">
+                            <span class="flaticon-graphic-tool ficon-bg-6"></span>
+                            <div class="icon-inner ssh4-i">
+                                <span class="flaticon-graphic-tool"></span>
+                            </div>
+                            <div class="ss-content sscontent-h4">
+                                <h3>Tile Mortar (TM)</h3>
+                                <p>• Can be lay tiles on a concrete surface
+                                    • No need of a cement screed
+                                    • Ready to use 25Kg cement based Adhesive mortar mix
+                                    • Just add 5L of water and mix
+                                    • Specialized for Porcelain tiles
+                                    • High bonding strength
+                                    • Exterior and Interior use</p>
+                                <a href="service-details.html">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="single-service ss-2 ss-home66 wow fadeInUp" data-wow-delay="1.5s">
+                            <span class="flaticon-graphic-tool ficon-bg-6"></span>
+                            <div class="icon-inner ssh4-i">
+                                <span class="flaticon-graphic-tool"></span>
+                            </div>
+                            <div class="ss-content sscontent-h4">
+                                <h3>Waterproofing Compound (WPC)</h3>
+                                <p>• Single component (Powder only)
+                                    • Ready to use 20Kg powder mix
+                                    • Just add 10L of water and mix
+                                    • Can be applied on slab, bathroom, swimming pools and blind walls
+                                    • Approximate coverage 300 sqft
+                                    </p>
+                                <a href="service-details.html">Buy Now</a>
+                            </div>
+                        </div>
+                    </div-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Service Section-->
+
+    <!--About-us Section-->
+    <section class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-6">
+                    <div class="about ss-home4 ab-home-6 wow fadeInRight" data-wow-delay=".3s">
+                        <div class="ab-ficon">
+                            <span class="flaticon-paint-3 ficon-ab-1"></span>
+                        </div>
+                        <div class="au-tittle">
+                            <p>About Us</p>
+                            <h2>What Are We?</h2>
+                        </div>
+
+
+                        <p>Cement Based Ready to use Building Materials
+                            Manufacturer, Supplier and applier</p>
+
+                        <p>We take your headaches to our shoulders by
+                            providing innovative, cost-effective building
+                            materials to get rid from the tradition</p>
+
+                        <p>We introduce ready to use cement based mortar
+                            mixes to overcome building barriers</p>
+
+                        <div class="btn-learn bc-4">
+                            <span class="learn-ab"><a href="about-us.html">Learn More</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/About-us Section-->
+
+    <!--Recent Section-->
+    <section class="completed-project">
+        <div class="container">
+            <div class="recent-top">
+                <p>Products</p>
+                <h3>Our Products</h3>
+                <p>Whereas digital stuff is a bit more ethereal. I like the trophy on my
+                    shelf, the presence in my home nice book is just as valuable.</p>
+            </div>
+            <div class="recent-project">
+                <div class="row">
+                    <!--div class="col-md-5">
+                        <div class="prj-1-content ph4-content ph6-content">
+                            <div class="p-icon">
+                                <span class="flaticon-repair ficon-pj-1"></span>
+                            </div>
+                            <h4>Colorful Painting For
+                                Your Dream!</h4>
+                            <p>There is no society ever discovered in remotest
+                                corner the world that has not had something
+                                that we would consider the arts.</p>
+                            <a href="portfolio-details.html"> Learn More</a>
+                        </div>
+                        <div class="project-1">
+                            <img src="assets/images/project/project-1.png" alt="">
+                            <div class="prj-1-content ph4-content ph6-content">
+                                <div class="p-icon">
+                                    <span class="flaticon-repair ficon-pj-1"></span>
+                                </div>
+                                <h4>Colorful Painting For
+                                    Your Dream!</h4>
+                                <p>There is no society ever discovered in remotest
+                                    corner the world that has not had something
+                                    that we would consider the arts.</p>
+                                <a href="portfolio-details.html"> Learn More</a>
+                            </div>
+                        </div>
+                    </div-->
+                    <!--div class="col-md-7">
+                        <div class="project-1">
+                            <img src="assets/images/project/project-2.png" alt="">
+                            <div class="prj-1-content prj-two ph4-content ph6-content">
+                                <div class="p-icon">
+                                    <span class="flaticon-repair ficon-pj-1 ficon-pj-2"></span>
+                                </div>
+                                <h4>Colorful Painting For
+                                    Your Dream!</h4>
+                                <p>There is no society ever discovered in remotest
+                                    corner the world that has not had something
+                                    that we would consider the arts.</p>
+                                <a href="portfolio-details.html"> Learn More</a>
+                            </div>
+                        </div>
+                    </div-->
+                    <div class="col-md-4">
+                        <div class="project-1">
+                            <img src="assets/images/project/1.png" alt="">
+                            <div class="prj-1-content prj-three ph4-content ph6-content">
+                                <div class="p-icon">
+                                    <span class="flaticon-repair ficon-pj-1 ficon-pj-3"></span>
+                                </div>
+                                <h4>Colorful Painting For
+                                    Your Dream!</h4>
+                                <p>There is no society ever discovered in remotest
+                                    corner the world that has not had something
+                                    that we would consider the arts.</p>
+                                <a href="portfolio-details.html"> Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-1">
+                            <img src="assets/images/project/2.png" alt="">
+                            <div class="prj-1-content prj-three ph4-content ph6-content">
+                                <div class="p-icon">
+                                    <span class="flaticon-repair ficon-pj-1 ficon-pj-3"></span>
+                                </div>
+                                <h4>Colorful Painting For
+                                    Your Dream!</h4>
+                                <p>There is no society ever discovered in remotest
+                                    corner the world that has not had something
+                                    that we would consider the arts.</p>
+                                <a href="portfolio-details.html"> Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-1">
+                            <img src="assets/images/project/3.png" alt="">
+                            <div class="prj-1-content prj-three ph4-content ph6-content">
+                                <div class="p-icon">
+                                    <span class="flaticon-repair ficon-pj-1 ficon-pj-3"></span>
+                                </div>
+                                <h4>Colorful Painting For
+                                    Your Dream!</h4>
+                                <p>There is no society ever discovered in remotest
+                                    corner the world that has not had something
+                                    that we would consider the arts.</p>
+                                <a href="portfolio-details.html"> Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-1">
+                            <img src="assets/images/project/4.png" alt="">
+                            <div class="prj-1-content prj-three ph4-content ph6-content">
+                                <div class="p-icon">
+                                    <span class="flaticon-repair ficon-pj-1 ficon-pj-3"></span>
+                                </div>
+                                <h4>Colorful Painting For
+                                    Your Dream!</h4>
+                                <p>There is no society ever discovered in remotest
+                                    corner the world that has not had something
+                                    that we would consider the arts.</p>
+                                <a href="portfolio-details.html"> Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-1">
+                            <img src="assets/images/project/5.png" alt="">
+                            <div class="prj-1-content prj-three ph4-content ph6-content">
+                                <div class="p-icon">
+                                    <span class="flaticon-repair ficon-pj-1 ficon-pj-3"></span>
+                                </div>
+                                <h4>Colorful Painting For
+                                    Your Dream!</h4>
+                                <p>There is no society ever discovered in remotest
+                                    corner the world that has not had something
+                                    that we would consider the arts.</p>
+                                <a href="portfolio-details.html"> Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-1">
+                            <img src="assets/images/project/6.png" alt="">
+                            <div class="prj-1-content prj-three ph4-content ph6-content">
+                                <div class="p-icon">
+                                    <span class="flaticon-repair ficon-pj-1 ficon-pj-3"></span>
+                                </div>
+                                <h4>Colorful Painting For
+                                    Your Dream!</h4>
+                                <p>There is no society ever discovered in remotest
+                                    corner the world that has not had something
+                                    that we would consider the arts.</p>
+                                <a href="portfolio-details.html"> Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Recent Section-->
+
+    <!--Client-feedback Section-->
+    <section class="client-feedback client-pdb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="client-image wow fadeInLeft" data-wow-delay=".5s">
+                        <img src="assets/images/client.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="client-content cc-h4">
+                        <p>Testimonials</p>
+                        <h3 data-aos="zoom-in">Clients Feedbacks</h3>
+                        <p>Whereas digital stuff is a bit more ethereal,
+                            I like the trophy on my shelf, the presence.</p>
+                        <div class="testimo-slide">
+                            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                <!-- Carousel Slides / Quotes -->
+                                <div class="carousel-inner">
+                                    <!-- Quote 1 -->
+                                    <div class="item active carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p>“ Some people think that the truth can hidden
+                                                    with little cover-up and decoration. But as time
+                                                    goes by, what is true is revealed, and what
+                                                    is fake fades away. ”</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Quote 2 -->
+                                    <div class="item carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p>“ Some people think that the truth can hidden
+                                                    with little cover-up and decoration. But as time
+                                                    goes by, what is true is revealed, and what
+                                                    is fake fades away. ”</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Quote 3 -->
+                                    <div class="item carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p>“ Some people think that the truth can hidden
+                                                    with little cover-up and decoration. But as time
+                                                    goes by, what is true is revealed, and what
+                                                    is fake fades away. ”</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Quote 4 -->
+                                    <div class="item carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p>“ Some people think that the truth can hidden
+                                                    with little cover-up and decoration. But as time
+                                                    goes by, what is true is revealed, and what
+                                                    is fake fades away. ”</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Quote 5 -->
+                                    <div class="item carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p>“ Some people think that the truth can hidden
+                                                    with little cover-up and decoration. But as time
+                                                    goes by, what is true is revealed, and what
+                                                    is fake fades away. ”</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Bottom Carousel Indicators -->
+                                <ol class="carousel-indicators testimo-indicat">
+                                    <li data-target="#quote-carousel" data-slide-to="0" class="active">
+                                        <img class="img-fluid " src="assets/images/cclient.png" alt="">
+                                    </li>
+                                    <li data-target="#quote-carousel" data-slide-to="1">
+                                        <img class="img-fluid" src="assets/images/cclient.png" alt="">
+                                    </li>
+                                    <li data-target="#quote-carousel" data-slide-to="2">
+                                        <img class="img-fluid" src="assets/images/cclient.png" alt="">
+                                    </li>
+                                    <li data-target="#quote-carousel" data-slide-to="3">
+                                        <img class="img-fluid" src="assets/images/cclient.png" alt="">
+                                    </li>
+                                    <li data-target="#quote-carousel" data-slide-to="4">
+                                        <img class="img-fluid" src="assets/images/slider/c-5.jpg" alt="">
+                                    </li>
+                                </ol>
+                                <!-- Carousel Buttons Next/Prev -->
+                                <div class="testimonial-nav">
+                                    <a data-slide="prev" href="#quote-carousel"
+                                        class="left carousel-control btn-prev h4-prev"><i
+                                            class="fa fa-chevron-left"></i></a>
+                                    <a data-slide="next" href="#quote-carousel"
+                                        class="right carousel-control btn-next h4-next"><i
+                                            class="fa fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Client-feedback Section-->
+
+    <!--Blog Section>
+    <section class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-one blg-h4 blg-h6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="bo-hover-content">
+                            <span class="flaticon-art-1 ficon-blg"></span>
+                        </div>
+                        <h3>Painting is an illusion, a
+                            piece of magic, so what
+                            you see is not.</h3>
+                        <div class="blg-meta">
+                            <ul>
+                                <li>Posted: 04th April, 2019</li>
+                                <li>Tag: Paint , ainting</li>
+                            </ul>
+                        </div>
+                        <p>Do activities you passionate about which
+                            make your heart and soul perky including
+                            things like working out cooking, painting
+                            writing, yoga, hiking, walking.</p>
+
+                        <div class="btn-learn-2 bc-4">
+                            <span class="learn-li"><a href="blog-details.html">Learn More</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-one blg-h4 blg-h6 wow fadeInUp" data-wow-delay="1s">
+                        <div class="bo-hover-content">
+                            <span class="flaticon-art-1 ficon-blg"></span>
+                        </div>
+                        <h3>Painting is a blind man
+                            profession. He paints
+                            not what he sees.</h3>
+                        <div class="blg-meta">
+                            <ul>
+                                <li>Posted: 04th April, 2019</li>
+                                <li>Tag: Paint , ainting</li>
+                            </ul>
+                        </div>
+                        <p>Blind man profession. He paints what he
+                            sees, but what he feels, what he tells
+                            himself about what he has seen painting
+                            Do activities you passionate about.</p>
+
+                        <div class="btn-learn-2 bc-4">
+                            <span class="learn-li"><a href="blog-details.html">Learn More</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-one blg-h4 blg-h6 wow fadeInUp" data-wow-delay="1.5s">
+                        <div class="bo-hover-content">
+                            <span class="flaticon-art-1 ficon-blg"></span>
+                        </div>
+                        <h3>Man's profession paints
+                            not what he sees, but
+                            what he feel what tell.</h3>
+                        <div class="blg-meta">
+                            <ul>
+                                <li>Posted: 04th April, 2019</li>
+                                <li>Tag: Paint , ainting</li>
+                            </ul>
+                        </div>
+                        <p>Blind man profession. He paint not what
+                            he sees, but what he feels, what he tells
+                            himself about what he has seen. Do
+                            activities passionate about which make.</p>
+
+                        <div class="btn-learn-2 bc-4">
+                            <span class="learn-li"><a href="blog-details.html">Learn More</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-two wow fadeInUp" data-wow-delay=".5s">
+                        <img src="assets/images/project/Ap-4.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-one blg-h4 blg-h6 wow fadeInUp" data-wow-delay="1s">
+                        <div class="bo-hover-content">
+                            <span class="flaticon-art-1 ficon-blg"></span>
+                        </div>
+                        <h3>Painting is an illusion, a
+                            piece of magic, so what
+                            you see is not.</h3>
+                        <div class="blg-meta">
+                            <ul>
+                                <li>Posted: 04th April, 2019</li>
+                                <li>Tag: Paint , ainting</li>
+                            </ul>
+                        </div>
+                        <p>Do activities you passionate about which
+                            make your heart and soul perky including
+                            things like working out cooking, painting
+                            writing, yoga, hiking, walking.</p>
+
+                        <div class="btn-learn-2 bc-4">
+                            <span class="learn-li"><a href="blog-details.html">Learn More</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-one blg-h4 blg-h6 wow fadeInUp" data-wow-delay="1.5s">
+                        <div class="bo-hover-content">
+                            <span class="flaticon-art-1 ficon-blg"></span>
+                        </div>
+                        <h3>Man's profession paints
+                            not what he sees, but
+                            what he feel what tell.</h3>
+                        <div class="blg-meta">
+                            <ul>
+                                <li>Posted: 04th April, 2019</li>
+                                <li>Tag: Paint , ainting</li>
+                            </ul>
+                        </div>
+                        <p>Blind man profession. He paint not what
+                            he sees, but what he feels, what he tells
+                            himself about what he has seen. Do
+                            activities passionate about which make.</p>
+                        <div class="btn-learn-2 bc-4">
+                            <span class="learn-li"><a href="blog-details.html">Learn More</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <Blog Section-->
+
+    <!--Project Ask Section-->
+    <section class="project-ask-red">
+        <div class="container">
+            <div class="pro-ask-content">
+                <h1 data-aos="slide-in-left">Want to buy now?</h1>
+                <p>Do you want to buy now?. Sure! Now you can buy from our website.We accept credit, debit card, e-wallets or cash on delivery. Just click on buy now button.</p>
+                <div class="btn-contact bc-4 wow zoomIn" data-wow-delay=".5s">
+                    <span class="con-btn"><a href="https://shop.promix.lk/" target="_blank">Buy Now</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Project Ask Section-->
+
+    <!--footer-nav Section-->
+    <section class="footer-nav">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="about-company">
+                            <h4>About Company</h4>
+                            <p>Promix is the company, manufactures Ready to use mortar mixes for various kinds of
+                                construction requirments
+                            </p>                           
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="about-company">
+                            <h4>Pages</h4>
+                            <ul class="single-footer-widget">
+                                <li><a href="index.html">Main</a></li>
+                                <li><a href="home.html">Home</a> </li>
+                                <li><a href="https://contractors.promix.lk/" target="_blank">Contractors</a></li>
+                                <li><a href="htttp://shop.promix.lk/" target="_blank">Buy Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="about-company">
+                            <h4>Company</h4>
+                            <ul class="single-footer-widget">
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="about-company">
+                            <h4>Follow Us:</h4>
+                            <div class="social-icon">
+                                <ul class="sicon-frist">
+                                    <li><a href="https://www.facebook.com/promixholdings/" target="_blank"><i class="fab fa-facebook-f sicon sicon6"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-nav Section-->
+
+    <!--Footer Section-->
+    <footer>
+        <p>© 2022 All Rights Reserved By Promix | Developed by <a href="https://peotech.site/" target="_blank" style="color: white !important;">PeoTech</a></p>
+    </footer>
+    <!--/Footer Section-->
+
+    <!--Script-->
+    <!--Main JS -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <!-- Animation plugin JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Countdown plugin JS -->
+    <script src="assets/js/countdown.js"></script>
+    <!-- Counterup plugin JS -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Shuffle plugin JS -->
+    <script src="assets/js/shuffle.js"></script>
+    <!-- Waypoint plugin JS -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- jquery Ui plugin JS -->
+    <script src="assets/js/jquery-ui.js"></script>
+    <!-- Fancybox plugin JS -->
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <!--Bootstrap JS-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--Custom JS-->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
